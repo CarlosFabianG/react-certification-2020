@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-
+import CardList from '../../components/CardList';
 import { useAuth } from '../../providers/Auth';
 import './Home.styles.css';
 
@@ -28,6 +28,7 @@ function HomePage() {
             <span className="separator" />
             <Link to="/secret">show me something cool →</Link>
           </span>
+          <CardList />
         </>
       ) : (
         <Link to="/login">let me in →</Link>
